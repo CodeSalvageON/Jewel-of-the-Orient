@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>Jewel of the Orient</title>
+
+  <link href="/JEWEL_OF_THE_ORIENT/css/custom_library.css" rel="stylesheet" type="text/css" />
+  <link href="/JEWEL_OF_THE_ORIENT/css/game_window.css" rel="stylesheet" type="text/css" />
+
+  <!-- Specific Section Styles -->
+  <link href="/JEWEL_OF_THE_ORIENT/css/sections/intro.css" rel="stylesheet" type="text/css" />
+  <link href="/JEWEL_OF_THE_ORIENT/css/sections/game.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <section id="game-window">
+    <section id="intro-window" class="center">
+      <p id="intro-title">Jewel of the Orient</p>
+      <section id="intro-begin" class="button center">Begin</section>
+    </section>
+    <section id="intro-info" class="center">
+      <section class="flex">
+        <section id="intro-next-button" class="center">
+          [ NEXT ]
+        </section>
+        <section id="got-it-button" class="center">
+          [ GOT IT ]
+        </section>
+      </section>
+      <section id="infoslide1">
+        <img src="/JEWEL_OF_THE_ORIENT/art/infoslides/slide1.jpeg" class="golden-glow infoslide-img"></img>
+        <p>Many years ago, merchants, travelers, and pilgrims alike relied on the famed Eastern Silk Road in order to
+          get to their destinations. In this simulation, you will embark on a long and ardous quest, taking the role of
+          an up-and-coming merchant attempting to turn a profit. However, starvation, robbers, and disease will
+          challenge you at every turn. How will you fare?</p>
+      </section>
+      <section id="infoslide2">
+        <p>You will travel hundreds of miles from city to city, fending off bandits, bad weather, diseases, and even starvation, if you aren't careful.</p>
+      </section>
+      <section id="infoslide3">
+        <p>You have a limited amount of arrows and the trail is harsh. Good luck!</p>
+      </section>
+    </section>
+    <section id="actual-game">
+      <p class="mid no-margin">Gold and Silver (as USD): <a id="gold-counter"> USD</a></p>
+      <p class="mid no-margin">Paper money (as USD): <a id="paper-money-counter"> USD</a></p>
+      <p class="mid no-margin">Food and Water Supplies: <a id="food-counter"></a> LB</p>
+      <p class="mid no-margin">Health: <a id="health-status"></a></p>
+      <section class="center">
+        <br />
+        <img src="/JEWEL_OF_THE_ORIENT/art/general/map.jpeg" width="40%" id="oasis-img" />
+        <p class="mid small-margin">Distance Traveled: <a id="distance-counter"></a> MILES</p>
+        <i class="mid small-margin" id="travel-status"></i>
+        <br />
+        <center>
+          <section class="button center-text small-margin center" id="hunt-btn">[ HUNT ]</section>
+          <section class="button center-text small-margin center" id="caravan-btn">[ CARAVAN ]</section>
+          <section class="button center-text small-margin center" id="rest-btn">[ REST ]</section>
+        </center>
+      </section>
+    </section>
+    <section id="hunting-game">
+      <section class="center">
+        <p class="mid no-margin">| The Hunt |</p>
+        <p class="mid no-margin"><i>Don't waste your arrows.</i></p>
+      </section>
+      <p class="mid">Arrows: <a id="arrow-count"></a></p>
+      <section class="center">
+        <img src="/JEWEL_OF_THE_ORIENT/art/general/hunting.jpeg" width="60%" id="hunting-img" />
+        <p class="mid" id="hunt-status"></p>
+      </section>
+      <center>
+        <section id="hunt-chance-button" class="button center small-margin">
+          [ SHOOT ]
+        </section>
+        <section id="quit-hunting-button" class="button small-margin center">
+          [ QUIT HUNTING ]
+        </section>
+      </center>
+    </section>
+    <section id="city-stops" class="center">
+      <section class="flex">
+        <section id="trade-button" class="center">
+          [ TRADE ]
+        </section>
+        <section id="continue-button" class="center">
+          [ CONTINUE ]
+        </section>
+      </section>
+      <section id="citystop1">
+        <p id="city-title">Welcome to Hami City! (Yuan)</p>
+        <img src="/JEWEL_OF_THE_ORIENT/art/general/hami.png" width="40%"/>
+        <p class="mid center no-margin"><i>Mongol horses pass by this city frequently. The rulers use primitive but effective ways of life, and are often simpler than the citizens they rule over. ― A traveling fur trader</i></p>
+      </section>
+      <section id="book">
+        <p id="city-title">Welcome to Kaifeng City! (Ming)</p>
+        <img src="/JEWEL_OF_THE_ORIENT/art/general/kaifeng.png" />
+        <p class="mid center no-margin"><i>There's a lot of scholars and government officials here, and the market is real nice (we have a thriving silk market), and theres plenty of rice to go around for everyone. But the Yellow River floods sometimes, and our city and community are hit real hard by it. May God protect us. ― A Chinese Jew</i></p>
+      </section>
+      <section id="citystop2">
+        <p id="city-title">Welcome to Kaifeng City! (Ming)</p>
+        <img src="/JEWEL_OF_THE_ORIENT/art/general/kaifeng.png" />
+        <p class="mid center no-margin"><i>There's a lot of scholars and government officials here, and the market is real nice (we have a thriving silk market), and theres plenty of rice to go around for everyone. But the Yellow River floods sometimes, and our city and community are hit real hard by it. May God protect us. ― A Chinese Jew</i></p>
+      </section>
+      <section id="citystop3">
+        <p id="city-title">Welcome to Yangzhou City! (Song)</p>
+        <img src="/JEWEL_OF_THE_ORIENT/art/general/yangzhou.png" />
+        <p class="mid center no-margin">Plums, plums, plums! Not to mention our wonderful soup and garden tea parties. What's not to like in this town? Well, there was that big gunpowder-related explosion recently. I thought gunpowder was only for fireworks! -- A Song Dynasty scholar</p>
+      </section>
+    </section>
+    <section id="trading-center" class="center">
+      <p class="mid no-margin">| The Trading Post |</p>
+      <p class="mid no-margin"><i>Risk comes from not knowing what you're doing.</i></p>
+      <img src="/JEWEL_OF_THE_ORIENT/art/general/market.webp" width="40%" />
+      <center>
+        <section id="trade-for-food" class="button center small-margin">
+          [ TRADE $X WORTH OF GOLD FOR Y LB WORTH OF FOOD ]
+        </section>
+        <section id="trade-for-gold" class="button small-margin center">
+          [ TRADE Y LB WORTH OF FOOD FOR $X WORTH OF GOLD ]
+        </section>
+        <section id="trade-for-arrows" class="button center small-margin">
+          [ TRADE $X WORTH OF GOLD FOR Y ARROWS ]
+        </section>
+        <section id="convert-to-paper" class="button center small-margin">
+          [ CONVERT ALL MONEY TO PAPER (LOSING 5% IN THE PROCESS) ]
+        </section>
+        <section id="quit-trading" class="button center small-margin">
+          [ QUIT TRADING ]
+        </section>
+      </center>
+    </section>
+    <section id="death-screen">
+      <p class="mid center no-margin">DEATH</p>
+      <p class="mid center no-margin">You have died from <a id="causa-mortis"></a></p>
+      <center>
+        <img class="center" src="/JEWEL_OF_THE_ORIENT/art/general/death.jpeg" width="60%" />
+        <section class="button center small-margin" id="retry-button">[ RETRY ]</section>
+      </center>
+    </section>
+    <section id="caravan-screen">
+      <p class="mid no-margin center">| The Caravan |</p>
+      <p class="mid no-margin center"><i>Cooperate and communicate.</i></p>
+      <center>
+        <section class="button small-margin" id="quit-caravan">[ QUIT ]</section>
+        <iframe src="https://skyscraper-in-the-snow.codesalvageon.repl.co/chat" frameBorder="0" id="caravan-frame" class="center"></iframe>
+      </center>
+    </section>
+    <section id="end-screen">
+      <p class="mid center no-margin">THE ENDS OF ROADS</p>
+      <p class="mid center no-margin"><i>You have traveled great lengths to get here. How did you fare?</i></p>
+      <center>
+        <img src="/JEWEL_OF_THE_ORIENT/art/general/oasis.jpeg" class="center" width="60%" />
+      </center>
+      <p class="mid center no-margin">Overall Profit: <a id="profit-count"></a> USD</p>
+      <p class="mid center no-margin">Food Supplies: <a id="glutton-count"></a> LB</p>
+      <p class="mid center no-margin">Overall Health: <a id="doctor-count"></a></p>
+      <center>
+        <section id="end-retry" class="button center small-margin">
+          [ TRY AGAIN ]
+        </section>
+      </center>
+    </section>
+  </section>
+
+  <!-- Libraries -->
+  <script src="/JEWEL_OF_THE_ORIENT/scripts/libraries/jquery.min.js"></script>
+  <script src="/JEWEL_OF_THE_ORIENT/scripts/libraries/custom_library.js"></script>
+
+  <!-- Specific Sections -->
+  <script src="/JEWEL_OF_THE_ORIENT/scripts/sections/game.js"></script>
+  <script src="/JEWEL_OF_THE_ORIENT/scripts/sections/intro.js"></script>
+</body>
+
+</html>

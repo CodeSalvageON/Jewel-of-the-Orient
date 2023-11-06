@@ -1,0 +1,49 @@
+#money-counter {
+  color: #785800FF;
+}
+
+#food-counter {
+  color: #ff8648ff;
+}
+
+#oasis-img, #hunting-img {
+  border-radius: 3px;
+}
+
+#city-stops,
+#citystop2,
+#citystop3, #hunting-game, #trading-center, #death-screen, #caravan-screen, #end-screen {
+  display: none;
+}
+
+#city-title {
+  font-size: 5vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#hunting-button {
+  margin: 0;
+}
+
+#trade-button, #continue-button {
+  width: 40%;
+  text-align: center;
+  padding: 4px;
+  border: 0.5px solid black;
+  background-color: #ffd977;
+  box-shadow: 5px 10px 18px #ffd977;
+}
+
+#caravan-frame {
+  width: 80%;
+  height: 50vh;
+}
+
+#profit-count {
+  color: #fff;
+}
+
+#glutton-count {
+  color: #a67b01FF;
+}
